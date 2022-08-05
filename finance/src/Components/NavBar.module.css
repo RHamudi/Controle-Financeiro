@@ -1,0 +1,15 @@
+.navbar {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    padding: 40px;
+    width: 100%;
+    background: rgb(53, 185, 53);
+}
+
+.navbarTitle {
+    font-weight: 700;
+    font-style: bold;
+}
