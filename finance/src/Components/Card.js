@@ -1,4 +1,5 @@
 import styles from './Card.module.css'
+import CardInput from './Input/CardInput'
 
 
 function Card({title, img}) {
