@@ -1,0 +1,33 @@
+.containerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 15px;
+  width: 30%;
+}
+
+.headerItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+.headerItem svg {
+    width: 25px;
+    height: 25px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+span {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}

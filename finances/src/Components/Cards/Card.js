@@ -1,14 +1,14 @@
 import styles from './Card.module.css'
-
-function Card({title, icon}) {
+import CardItem from './CardItem'
+import {BiUpArrowAlt, BiDownArrowAlt} from 'react-icons/bi'
+import {BsCurrencyDollar} from 'react-icons/bs'
+function Card() {
     return (
-        <section>
-            <div className={styles.cardMain}>
-                <h1 className={styles.title}>{title}</h1>
-                <span className={styles.icon}>{icon}</span>
-            </div>
-            <p className={styles.value}>R$ 1600.00</p>
-        </section>
+        <div className={styles.containerCard}>
+            <CardItem title="Entradas" icon={<BiUpArrowAlt />} value="R$ 2500.00"/>
+            <CardItem title="Saidas" icon={<BiDownArrowAlt/>} value="R$ 2500.00" />
+            <CardItem title="Total" icon={<BsCurrencyDollar />} value="R$ 00.00" />
+        </div>
     )
 }
 
