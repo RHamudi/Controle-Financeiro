@@ -1,8 +1,13 @@
-import './App.css';
+import Header from './Components/Header/Header';
+import './App.css'
+import Card from './Components/Cards/Card';
+import {BiUpArrowAlt} from 'react-icons/bi'
 
 function App() {
-  return (
-    
+  return (<>
+    <Header />
+    <Card title="Entradas" icon={<BiUpArrowAlt/>}/>
+    </>
   );
 }
 
