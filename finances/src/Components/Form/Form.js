@@ -14,8 +14,7 @@ function Form() {
     url = "http://localhost:5000/saida"
   }
 
-  function handleSubmit(e) {
-    e.preventDefault()
+  function handleSubmit() {
     fetch(url, {
         method: "POST",
         headers: {
@@ -42,7 +41,7 @@ function Form() {
           type="number"
           name="value"
           id="value"
-          onChange={(e) => setAmount(e.target.value)}
+          onChange={(e) => Number(setAmount(e.target.value))}
         />
       </div>
       <div className={styles.radioContent}>
