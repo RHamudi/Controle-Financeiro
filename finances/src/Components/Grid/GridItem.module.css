@@ -1,0 +1,18 @@
+.desc {
+    padding-left: 10px;
+}
+
+td {
+  padding-top: 15px;
+  text-align: start;
+  word-break: break-all;
+}
+
+.alin {
+    text-align: center !important;
+}
+
+.delete {
+    text-align: center;
+    font-size: 1.2rem;
+}

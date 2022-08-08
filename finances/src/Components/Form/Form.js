@@ -61,7 +61,7 @@ function Form() {
         />
         <label htmlFor="saida">Saida</label>
       </div>
-      <button onClick={handleSubmit}>Adicionar</button>
+      <button className={styles.button} onClick={handleSubmit}>Adicionar</button>
     </form>
   );
 }
