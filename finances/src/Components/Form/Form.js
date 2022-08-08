@@ -6,6 +6,25 @@ function Form() {
   const [amount, setAmount] = useState(0);
   const [radio, setRadio] = useState(true);
 
+  const generateID = () => Math.round(Math.random() * 1000);
+  let url;
+  if(radio === true) {
+    url = "http://localhost:5000/entrada"
+  } else {
+    url = "http://localhost:5000/saida"
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({id: generateID, amount, desc})
+    })
+  }
+
   return (
     <form>
       <div className={styles.inputContent}>
@@ -43,7 +62,7 @@ function Form() {
         />
         <label htmlFor="saida">Saida</label>
       </div>
-      <button>Adicionar</button>
+      <button onClick={handleSubmit}>Adicionar</button>
     </form>
   );
 }

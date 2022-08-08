@@ -3,6 +3,12 @@ import CardItem from './CardItem'
 import {BiUpArrowAlt, BiDownArrowAlt} from 'react-icons/bi'
 import {BsCurrencyDollar} from 'react-icons/bs'
 function Card() {
+
+    fetch("http://localhost:5000/entrada", {
+        method: "GET",
+        
+    })
+
     return (
         <div className={styles.containerCard}>
             <CardItem title="Entradas" icon={<BiUpArrowAlt />} value="R$ 2500.00"/>
