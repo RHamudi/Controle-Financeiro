@@ -1,20 +1,15 @@
 {
   "entrada": [
     {
-      "amount": "2222",
-      "desc": "Testando2",
+      "amount": "10000",
+      "desc": "10000",
       "id": 1
-    },
-    {
-      "amount": "234",
-      "desc": "Testando23",
-      "id": 2
     }
   ],
   "saida": [
     {
-      "amount": "304",
-      "desc": "testando3",
+      "amount": "10000",
+      "desc": "10000",
       "id": 1
     }
   ]

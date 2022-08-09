@@ -6,13 +6,26 @@ td {
   padding-top: 15px;
   text-align: start;
   word-break: break-all;
+  font-size: 1.2rem;
 }
 
 .alin {
     text-align: center !important;
 }
 
+.value {
+    padding-left: 1rem;
+}
+
 .delete {
     text-align: center;
     font-size: 1.2rem;
+}
+
+.buttonGreen {
+    color: green;
+}
+
+.buttonRed {
+    color: red;
 }

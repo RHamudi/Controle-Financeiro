@@ -7,7 +7,7 @@ function Card() {
   const [entradaValue, setEntradaValue] = useState("00");
   const [saidaValue, setSaidaValue] = useState("00");
 
-  const totalValue = entradaValue + saidaValue
+  const totalValue = entradaValue - saidaValue
 
   useEffect(() => {
     fetch("http://localhost:5000/entrada", {
@@ -44,7 +44,7 @@ function Card() {
         icon={<BiDownArrowAlt />}
         value={`R$ ${saidaValue}`}
       />
-      <CardItem title="Total" icon={<BsCurrencyDollar />} value={totalValue} />
+      <CardItem title="Total" icon={<BsCurrencyDollar />} value={`R$ ${totalValue}`} />
     </div>
   );
 }
