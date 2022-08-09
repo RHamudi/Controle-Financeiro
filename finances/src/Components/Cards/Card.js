@@ -36,12 +36,12 @@ function Card() {
     <div className={styles.containerCard}>
       <CardItem
         title="Entradas"
-        icon={<BiUpArrowAlt />}
+        icon={<BiUpArrowAlt className={styles.svgGreen} />}
         value={`R$ ${entradaValue}`}
       />
       <CardItem
         title="Saidas"
-        icon={<BiDownArrowAlt />}
+        icon={<BiDownArrowAlt className={styles.svgRed} />}
         value={`R$ ${saidaValue}`}
       />
       <CardItem title="Total" icon={<BsCurrencyDollar />} value={`R$ ${totalValue}`} />

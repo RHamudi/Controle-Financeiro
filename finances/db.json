@@ -1,16 +1,4 @@
 {
-  "entrada": [
-    {
-      "amount": "10000",
-      "desc": "10000",
-      "id": 1
-    }
-  ],
-  "saida": [
-    {
-      "amount": "10000",
-      "desc": "10000",
-      "id": 1
-    }
-  ]
+  "entrada": [],
+  "saida": []
 }

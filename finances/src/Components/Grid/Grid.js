@@ -31,7 +31,7 @@ function Grid() {
   }, [])
 
   return (
-    <table className={styles.table}>
+    <table className={styles.div}>
       <thead>
         <th width={40}>Descrição</th>
         <th width={40}>Valor</th>
